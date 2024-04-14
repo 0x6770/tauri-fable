@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "postinstall": "dotnet tool restore",
     "dev": "dotnet fable watch src -s --language ts --run vite",
     "build": "dotnet fable src -s --language ts --run tsc && vite build",
     "preview": "dotnet fable watch src -s --language ts --run vite preview",
